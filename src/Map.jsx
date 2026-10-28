@@ -6,10 +6,12 @@ import {
   Popup,
 } from "react-leaflet";
 
+
+import Button from '@mui/material/Button';
 import data from "./assets/4.5_week.geojson.json";
 import plateBoundaries from "./assets/plate_boundaries.geojson.json";
 
-export const Map = ({ setEarthquake }) => {
+export const Map = ({ setEarthquake, size }) => {
   const earthquakes = data.features;
 
   return (
@@ -28,14 +30,14 @@ export const Map = ({ setEarthquake }) => {
         <CircleMarker
           key={i}
           center={[d.geometry.coordinates[1], d.geometry.coordinates[0]]}
-          radius={d.properties.mag ** 2}
+          radius={d.properties.mag ** size}
           pathOptions={{ color: "#e639bb" }}
         >
           <Popup>
             <div style={{ textAlign: "center" }}>
               {d.properties.title} <br />
             </div>
-            <button onClick={() => setEarthquake(d)}>Details</button>
+            <Button variant="outlined" color= "primary" size="small" onClick={() => setEarthquake(d)}>Details</Button>
           </Popup>
         </CircleMarker>
       ))}
