@@ -2,7 +2,7 @@
 
 Beide Bibliotheken sind in diesem Projekt bereits vorinstalliert und werden mit den anderen Abhängigkeiten mit dem `npm i`-Befehl installiert.
 
-Verschaff dir zunächst einen Überblick über den Code in diesem Projekt: In der App.css ist wieder ein Grid definiert (dieses Mal mit Klassen-Selektoren). Die App.jsx hat drei Kind-Komponenten: Header.jsx, Sidebar.jsx und Map.jsx. Die Daten kommen aus dem Ordner assets:
+Verschaffe dir zunächst einen Überblick über den Code in diesem Projekt: In der App.css ist wieder ein Grid definiert (dieses Mal mit Klassen-Selektoren). Die App.jsx hat drei Kind-Komponenten: Header.jsx, Sidebar.jsx und Map.jsx. Die Daten kommen aus dem Ordner assets:
 
 - 4.5_week.geojson.json - die Datei enthält aktuelle Erdbeben der Stufe 4.5 oder höher. (Quelle: USGS Feed, https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
 - plate_boundaries: Grenzverlauf tektonische Platten (Quelle: Hugo Ahlenius, Nordpil and Peter Bird, https://github.com/fraxen/tectonicplates/tree/master)
